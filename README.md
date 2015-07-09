@@ -25,20 +25,20 @@ Create a new file with a name that is meaningful to your module.
 
 In the module, anything prefixed with `exports` will be available to consumers.
 
-```coffeescript
+```coffee
 exports.myFunction = (arg1, arg2) ->
   "#{arg1}#{arg2}"
 ```
 
 ## Importing a module
 
-```coffeescript
+```coffee
 myModule = require "myModule"
 ```
 
 Module functions are available on the variable you assigned the module to, in
 this case the `myModule` variable.
 
-```coffeescript
+```coffee
 myModule.myFunction("foo", "bar")
 ```
