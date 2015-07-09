@@ -4,7 +4,7 @@ exports.addStatesToObjects = (states, objects) ->
       object.states.add(states)
 
 exports.addStatesToObject = (states, object) ->
-  addStatesToObjects(states, [object])
+  exports.addStatesToObjects(states, [object])
 
 exports.switchObjectsToInstantState = (objects, state) ->
   if objects and state
