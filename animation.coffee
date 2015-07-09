@@ -4,5 +4,5 @@ exports.addAnimationOptionsToObjects = (animationOptions, objects) ->
       object.states.animationOptions = animationOptions
 
 exports.addAnimationOptionsToObject = (animationOptions, object) ->
-  addAnimationOptionsToObjects(animationOptions, [object])
+  exports.addAnimationOptionsToObjects(animationOptions, [object])
 
